@@ -16,6 +16,7 @@
             color: #fff;
             font-family: "Roboto", Arial, Helvetica, sans-serif;
             font-weight: 300;
+            font-size: 14px;
         }
 
         .logo {
@@ -44,14 +45,13 @@
 
         .bottom {
             z-index: 2;
-            font-size: 14px;
             display: flex;
             flex-direction: column;
         }
 
         .bottom-header {
-            margin: 0;
             font-size: inherit;
+            margin: 0;
             font-weight: 300;
             padding: 0;
         }
@@ -85,12 +85,15 @@
         }
 
         .contacts-address {
-            font-size: 18px
         }
 
         .contacts-map {
             color: #76A7F1;
             font-weight: 400;
+        }
+
+        .contacts-tel {
+            font-size: 26px;
         }
 
         .contacts-tel,
@@ -112,9 +115,11 @@
         only screen and (max-width: 768px) {
             .root {
                 background-image: url('mobile.jpg');
+                background-size: cover;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
+                font-size: 13px;
             }
 
             .logo {
@@ -132,12 +137,10 @@
             }
 
             .contacts-address {
-                font-size: 13px;
                 margin: 0 0 10px 0;
             }
 
             .contacts-map {
-                font-size: 13px;
                 margin: 0 0 30px 0;
             }
 
@@ -147,11 +150,9 @@
             }
 
             .contacts-mail {
-                font-size: 13px;
             }
 
             .bottom {
-                font-size: 12px;
                 padding: 20px 40px 80px 40px;
             }
 
@@ -162,11 +163,7 @@
 
         @media
         only screen and (min-width: 430px) and (max-width: 768px) {
-            .bottom-header {
-                font-size: 14px
-            }
-
-            .bottom {
+            .root {
                 font-size: 14px
             }
         }
@@ -176,6 +173,7 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
+                font-size: 18px;
             }
 
             .logo {
@@ -193,12 +191,10 @@
             }
 
             .contacts-address {
-                font-size: 18px;
                 margin: 0 0 10px 0;
             }
 
             .contacts-map {
-                font-size: 18px;
                 margin: 0 0 30px 0;
             }
 
@@ -208,16 +204,13 @@
             }
 
             .contacts-mail {
-                font-size: 18px;
             }
 
             .bottom {
-                font-size: 18px;
                 padding: 40px 80px 140px 80px;
             }
 
             .bottom-header {
-                font-size: 18px;
                 font-weight: 300;
             }
 
@@ -234,6 +227,7 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
+                font-size: 24px;
             }
 
             .logo {
@@ -251,12 +245,10 @@
             }
 
             .contacts-address {
-                font-size: 24px;
                 margin: 0 0 10px 0;
             }
 
             .contacts-map {
-                font-size: 24px;
                 margin: 0 0 30px 0;
             }
 
@@ -266,11 +258,9 @@
             }
 
             .contacts-mail {
-                font-size: 18px;
             }
 
             .bottom {
-                font-size: 18px;
                 padding: 20px 0 140px 0;
                 position: relative;
                 left: 45vw;
@@ -278,7 +268,6 @@
             }
 
             .bottom-header {
-                font-size: 18px;
                 font-weight: 300;
             }
 
@@ -306,37 +295,11 @@
             }
         }
         @media only screen 
-        and (device-width: 375px) 
-        and (device-height: 812px) 
-        and (-webkit-device-pixel-ratio: 3)
-        and (orientation: landscape),
-        only screen 
-        and (device-width: 390px) 
-        and (device-height: 844px) 
-        and (-webkit-device-pixel-ratio: 3)
-        and (orientation: landscape),
-        only screen 
-        and (device-width: 428px) 
-        and (device-height: 926px) 
-        and (-webkit-device-pixel-ratio: 3)
-        and (orientation: landscape),
-        only screen 
-        and (device-width: 414px) 
-        and (device-height: 896px) 
-        and (-webkit-device-pixel-ratio: 2)
-        and (orientation: landscape),
-        only screen 
-        and (device-width: 375px) 
-        and (device-height: 812px) 
-        and (-webkit-device-pixel-ratio: 3)
-        and (orientation: landscape),
-        only screen 
-        and (device-width: 414px) 
-        and (device-height: 896px) 
-        and (-webkit-device-pixel-ratio: 3)
+        and (min-width: 700px) 
+        and (max-height: 400px) 
         and (orientation: landscape) {
-            .root {
-                background-image: url('2160_1620_Background_horizontal_tablet_opt.jpg');
+            .html {
+                transform: rotate(-90deg);
             }
         }
     </style>
